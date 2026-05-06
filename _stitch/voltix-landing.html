@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Voltix Electrical Services | Powering Your World Safely</title>
+<!-- Tailwind CSS v3 CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts: Inter or similar for a clean, professional look -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Lucide Icons (CDN for quick visual matches) -->
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              yellow: '#FFC82C', // Vibrant yellow from image
+              navy: '#0F172A',   // Deep dark navy
+              navyLight: '#1E293B',
+              accent: '#FDE047'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-layout">
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #ffffff;
+      color: #1a1a1a;
+    }
+    .hero-bg {
+      background: linear-gradient(to right, rgba(15, 23, 42, 0.95) 40%, rgba(15, 23, 42, 0.3) 100%), 
+                  url('{{DATA:IMAGE:IMAGE_1}}');
+      background-size: cover;
+      background-position: top center;
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.03);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+      transition: all 0.3s ease;
+    }
+  </style>
+</head>
+<body class="antialiased">
+<!-- BEGIN: Navigation Header -->
+<header class="sticky top-0 z-50 bg-brand-navy/95 backdrop-blur-md border-b border-white/10" data-purpose="main-header">
+<div class="container mx-auto px-4 md:px-6 py-4 flex items-center justify-between">
+<div class="flex items-center space-x-2">
+<div class="text-brand-yellow font-black text-2xl flex items-center">
+<i class="fill-current mr-2" data-lucide="zap"></i>
+<span>Voltix</span>
+</div>
+<div class="hidden sm:block text-[10px] uppercase tracking-widest text-gray-400 font-bold leading-tight">
+          Electrical<br/>Services
+        </div>
+</div>
+<nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-300">
+<a class="text-brand-yellow" href="#">Home</a>
+<a class="hover:text-white transition-colors" href="#about">About</a>
+<a class="hover:text-white transition-colors" href="#services">Services</a>
+<a class="hover:text-white transition-colors" href="#why-choose-us">Why Choose Us</a>
+<a class="hover:text-white transition-colors" href="#testimonials">Testimonials</a>
+<a class="hover:text-white transition-colors" href="#contact">Contact</a>
+</nav>
+<a class="bg-brand-yellow hover:bg-yellow-400 text-brand-navy px-6 py-2.5 rounded-md font-bold text-sm flex items-center transition-all" href="tel:5551234567">
+<i class="w-4 h-4 mr-2 fill-current" data-lucide="phone"></i>
+        Call Us Now
+      </a>
+</div>
+</header>
+<!-- END: Navigation Header -->
+<!-- BEGIN: Hero Section -->
+<section class="relative bg-brand-navy min-h-[700px] flex items-center overflow-hidden" data-purpose="hero-section">
+<!-- The background image logic is handled via CSS .hero-bg but the source is provided below -->
+<div class="absolute inset-0 z-0">
+<img alt="Electrician at work" class="w-full h-full object-cover object-top opacity-80" src="https://lh3.googleusercontent.com/aida/ADBb0ugtmeVUJYd-4rfMttVblIYCYnbzWNaSWQpSbTpwLmYle7ht4b9GpA8BvJaym647z0_Glb0DgOJvVQV7Rul8nnJRIXcaVhjO-BVI0qRRjJZz57QTP4KBGOntvoaI1rVNYO3lW1gzVHxK8oa6k3hGfT2XYkr5CKIvuhHnO471mv9h7iIWfPGexlHyqZ5Uswbnbrn6EiZEtSEslnSkEFKu3cNnVMGsNKAcwQJWlEJQYfTWQ3w3WdfiOK9gB1CIqK7vhCZp87_696-rAw"/>
+<div class="absolute inset-0 bg-gradient-to-r from-brand-navy via-brand-navy/80 to-transparent"></div>
+</div>
+<div class="container mx-auto px-4 md:px-6 relative z-10 py-20 lg:py-32">
+<div class="max-w-2xl">
+<div class="inline-flex items-center px-3 py-1 rounded-full border border-brand-yellow/30 bg-brand-yellow/10 text-brand-yellow text-xs font-bold uppercase tracking-wider mb-6">
+<i class="w-3 h-3 mr-2" data-lucide="shield-check"></i>
+          Trusted • Local • Professional
+        </div>
+<h1 class="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6">
+          Powering Your <br/>
+<span class="text-brand-yellow italic">World Safely</span>
+</h1>
+<p class="text-xl text-gray-300 mb-10 max-w-lg leading-relaxed">
+          Expert electrical solutions for homes and businesses. Quality workmanship you can rely on.
+        </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="bg-brand-yellow hover:bg-yellow-400 text-brand-navy px-8 py-4 rounded-md font-bold text-lg flex items-center justify-center transition-all shadow-lg shadow-brand-yellow/20" href="tel:5551234567">
+<i class="w-5 h-5 mr-3 fill-current" data-lucide="phone"></i>
+            Call Us Now
+          </a>
+<button class="bg-transparent border-2 border-white/20 hover:border-white text-white px-8 py-4 rounded-md font-bold text-lg flex items-center justify-center transition-all group">
+            Request a Quote
+            <i class="w-5 h-5 ml-3 opacity-70 group-hover:opacity-100" data-lucide="calendar"></i>
+</button>
+</div>
+<!-- Trust Badges -->
+<div class="mt-16 flex flex-wrap gap-8">
+<div class="flex items-center space-x-3 text-white/80">
+<i class="text-brand-yellow w-6 h-6" data-lucide="shield-check"></i>
+<span class="text-sm font-semibold">Licensed &amp; Insured</span>
+</div>
+<div class="flex items-center space-x-3 text-white/80">
+<i class="text-brand-yellow w-6 h-6" data-lucide="clock"></i>
+<span class="text-sm font-semibold">24/7 Emergency Service</span>
+</div>
+<div class="flex items-center space-x-3 text-white/80">
+<i class="text-brand-yellow w-6 h-6" data-lucide="award"></i>
+<span class="text-sm font-semibold">Satisfaction Guaranteed</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Hero Section -->
+<!-- BEGIN: Services Grid -->
+<section class="py-24 bg-gray-50" data-purpose="services-section" id="services">
+<div class="container mx-auto px-4 md:px-6">
+<div class="text-center mb-16">
+<p class="text-brand-yellow font-bold uppercase tracking-widest text-sm mb-3">Our Services</p>
+<h2 class="text-4xl font-extrabold text-brand-navy mb-4">Complete Electrical Solutions</h2>
+<p class="text-gray-500 max-w-2xl mx-auto">From minor repairs to major installations, we've got you covered.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+<!-- Service Card 1 -->
+<div class="service-card bg-white p-8 rounded-xl shadow-sm hover:shadow-xl border border-gray-100 flex flex-col h-full group">
+<div class="text-brand-yellow mb-6">
+<i class="w-10 h-10" data-lucide="home"></i>
+</div>
+<h3 class="text-xl font-bold text-brand-navy mb-4">Residential Electrical</h3>
+<p class="text-gray-500 text-sm mb-8 flex-grow">Wiring, lighting, panel upgrades, and more for your home.</p>
+<a class="text-brand-yellow font-bold text-sm flex items-center group-hover:translate-x-1 transition-transform" href="#">
+            Learn More <i class="w-4 h-4 ml-2" data-lucide="arrow-right"></i>
+</a>
+</div>
+<!-- Service Card 2 -->
+<div class="service-card bg-white p-8 rounded-xl shadow-sm hover:shadow-xl border border-gray-100 flex flex-col h-full group">
+<div class="text-brand-yellow mb-6">
+<i class="w-10 h-10" data-lucide="building-2"></i>
+</div>
+<h3 class="text-xl font-bold text-brand-navy mb-4">Commercial Electrical</h3>
+<p class="text-gray-500 text-sm mb-8 flex-grow">Reliable electrical solutions for your business operations.</p>
+<a class="text-brand-yellow font-bold text-sm flex items-center group-hover:translate-x-1 transition-transform" href="#">
+            Learn More <i class="w-4 h-4 ml-2" data-lucide="arrow-right"></i>
+</a>
+</div>
+<!-- Service Card 3 -->
+<div class="service-card bg-white p-8 rounded-xl shadow-sm hover:shadow-xl border border-gray-100 flex flex-col h-full group">
+<div class="text-brand-yellow mb-6">
+<i class="w-10 h-10" data-lucide="zap"></i>
+</div>
+<h3 class="text-xl font-bold text-brand-navy mb-4">Electrical Installations</h3>
+<p class="text-gray-500 text-sm mb-8 flex-grow">Panel upgrades, EV chargers, lighting installations and more.</p>
+<a class="text-brand-yellow font-bold text-sm flex items-center group-hover:translate-x-1 transition-transform" href="#">
+            Learn More <i class="w-4 h-4 ml-2" data-lucide="arrow-right"></i>
+</a>
+</div>
+<!-- Service Card 4 -->
+<div class="service-card bg-white p-8 rounded-xl shadow-sm hover:shadow-xl border border-gray-100 flex flex-col h-full group">
+<div class="text-brand-yellow mb-6">
+<i class="w-10 h-10" data-lucide="wrench"></i>
+</div>
+<h3 class="text-xl font-bold text-brand-navy mb-4">Repairs &amp; Maintenance</h3>
+<p class="text-gray-500 text-sm mb-8 flex-grow">Troubleshooting, repairs, and maintenance to keep you powered.</p>
+<a class="text-brand-yellow font-bold text-sm flex items-center group-hover:translate-x-1 transition-transform" href="#">
+            Learn More <i class="w-4 h-4 ml-2" data-lucide="arrow-right"></i>
+</a>
+</div>
+<!-- Service Card 5 -->
+<div class="service-card bg-white p-8 rounded-xl shadow-sm hover:shadow-xl border border-gray-100 flex flex-col h-full group">
+<div class="text-brand-yellow mb-6">
+<i class="w-10 h-10" data-lucide="check-circle"></i>
+</div>
+<h3 class="text-xl font-bold text-brand-navy mb-4">Safety Inspections</h3>
+<p class="text-gray-500 text-sm mb-8 flex-grow">Ensure your property meets code and stays safe for everyone.</p>
+<a class="text-brand-yellow font-bold text-sm flex items-center group-hover:translate-x-1 transition-transform" href="#">
+            Learn More <i class="w-4 h-4 ml-2" data-lucide="arrow-right"></i>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Services Grid -->
+<!-- BEGIN: About / Commitment Section -->
+<section class="py-24 bg-brand-navy text-white overflow-hidden" data-purpose="about-section" id="about">
+<div class="container mx-auto px-4 md:px-6">
+<div class="flex flex-col lg:flex-row items-center gap-16">
+<div class="lg:w-1/2 relative">
+<!-- Decor element: Dots -->
+<div class="absolute -left-10 -bottom-10 text-brand-yellow opacity-30 grid grid-cols-6 gap-4">
+<div class="w-1 h-1 bg-current rounded-full"></div><div class="w-1 h-1 bg-current rounded-full"></div><div class="w-1 h-1 bg-current rounded-full"></div><div class="w-1 h-1 bg-current rounded-full"></div><div class="w-1 h-1 bg-current rounded-full"></div><div class="w-1 h-1 bg-current rounded-full"></div>
+<div class="w-1 h-1 bg-current rounded-full"></div><div class="w-1 h-1 bg-current rounded-full"></div><div class="w-1 h-1 bg-current rounded-full"></div><div class="w-1 h-1 bg-current rounded-full"></div><div class="w-1 h-1 bg-current rounded-full"></div><div class="w-1 h-1 bg-current rounded-full"></div>
+<div class="w-1 h-1 bg-current rounded-full"></div><div class="w-1 h-1 bg-current rounded-full"></div><div class="w-1 h-1 bg-current rounded-full"></div><div class="w-1 h-1 bg-current rounded-full"></div><div class="w-1 h-1 bg-current rounded-full"></div><div class="w-1 h-1 bg-current rounded-full"></div>
+</div>
+<div class="relative z-10 border-8 border-brand-navyLight rounded-2xl overflow-hidden shadow-2xl">
+<!-- Using the same master image but visualizing a different part of the workspace -->
+<img alt="Electrician installing lighting" class="w-full h-[400px] object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0ugtmeVUJYd-4rfMttVblIYCYnbzWNaSWQpSbTpwLmYle7ht4b9GpA8BvJaym647z0_Glb0DgOJvVQV7Rul8nnJRIXcaVhjO-BVI0qRRjJZz57QTP4KBGOntvoaI1rVNYO3lW1gzVHxK8oa6k3hGfT2XYkr5CKIvuhHnO471mv9h7iIWfPGexlHyqZ5Uswbnbrn6EiZEtSEslnSkEFKu3cNnVMGsNKAcwQJWlEJQYfTWQ3w3WdfiOK9gB1CIqK7vhCZp87_696-rAw"/>
+</div>
+</div>
+<div class="lg:w-1/2">
+<p class="text-brand-yellow font-bold uppercase tracking-widest text-sm mb-3">About Us</p>
+<h2 class="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">Committed to Quality and Safety</h2>
+<p class="text-gray-400 mb-8 text-lg">
+            With years of experience, Voltix Electrical Services is your trusted partner for all your electrical needs. We pride ourselves on delivering safe, reliable, and efficient solutions with exceptional customer service.
+          </p>
+<ul class="space-y-4 mb-10">
+<li class="flex items-center space-x-3">
+<div class="bg-brand-yellow rounded-full p-1">
+<i class="w-4 h-4 text-brand-navy stroke-[3]" data-lucide="check"></i>
+</div>
+<span class="font-medium">Licensed, Insured &amp; Certified</span>
+</li>
+<li class="flex items-center space-x-3">
+<div class="bg-brand-yellow rounded-full p-1">
+<i class="w-4 h-4 text-brand-navy stroke-[3]" data-lucide="check"></i>
+</div>
+<span class="font-medium">Upfront Pricing</span>
+</li>
+<li class="flex items-center space-x-3">
+<div class="bg-brand-yellow rounded-full p-1">
+<i class="w-4 h-4 text-brand-navy stroke-[3]" data-lucide="check"></i>
+</div>
+<span class="font-medium">Quality Workmanship</span>
+</li>
+<li class="flex items-center space-x-3">
+<div class="bg-brand-yellow rounded-full p-1">
+<i class="w-4 h-4 text-brand-navy stroke-[3]" data-lucide="check"></i>
+</div>
+<span class="font-medium">Customer Satisfaction Guaranteed</span>
+</li>
+</ul>
+<a class="inline-block bg-brand-yellow hover:bg-yellow-400 text-brand-navy font-bold px-8 py-4 rounded-md transition-colors shadow-lg" href="#">
+            Learn More About Us
+          </a>
+</div>
+</div>
+</div>
+</section>
+<!-- END: About / Commitment Section -->
+<!-- BEGIN: Why Choose Us -->
+<section class="py-24 bg-white" data-purpose="why-choose-us-section" id="why-choose-us">
+<div class="container mx-auto px-4 md:px-6">
+<div class="text-center mb-16">
+<p class="text-brand-yellow font-bold uppercase tracking-widest text-sm mb-3">Why Choose Us</p>
+<h2 class="text-4xl font-extrabold text-brand-navy mb-4">Your Satisfaction is Our Priority</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 text-center">
+<!-- Feature 1 -->
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 bg-brand-yellow/10 rounded-full flex items-center justify-center text-brand-yellow mb-6">
+<i class="w-8 h-8" data-lucide="user-check"></i>
+</div>
+<h3 class="text-xl font-bold text-brand-navy mb-3">Experienced Professionals</h3>
+<p class="text-gray-500 text-sm leading-relaxed">Skilled electricians with years of hands-on experience.</p>
+</div>
+<!-- Feature 2 -->
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 bg-brand-yellow/10 rounded-full flex items-center justify-center text-brand-yellow mb-6">
+<i class="w-8 h-8" data-lucide="clock-4"></i>
+</div>
+<h3 class="text-xl font-bold text-brand-navy mb-3">24/7 Emergency Service</h3>
+<p class="text-gray-500 text-sm leading-relaxed">We're available when you need us most, anytime day or night.</p>
+</div>
+<!-- Feature 3 -->
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 bg-brand-yellow/10 rounded-full flex items-center justify-center text-brand-yellow mb-6">
+<i class="w-8 h-8" data-lucide="banknote"></i>
+</div>
+<h3 class="text-xl font-bold text-brand-navy mb-3">Transparent Pricing</h3>
+<p class="text-gray-500 text-sm leading-relaxed">No hidden fees, just honest and upfront pricing for every job.</p>
+</div>
+<!-- Feature 4 -->
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 bg-brand-yellow/10 rounded-full flex items-center justify-center text-brand-yellow mb-6">
+<i class="w-8 h-8" data-lucide="shield-check"></i>
+</div>
+<h3 class="text-xl font-bold text-brand-navy mb-3">Safe &amp; Reliable Solutions</h3>
+<p class="text-gray-500 text-sm leading-relaxed">We prioritize safety in every project we undertake.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Why Choose Us -->
+<!-- BEGIN: Testimonials -->
+<section class="py-24 bg-brand-navy text-white" data-purpose="testimonials-section" id="testimonials">
+<div class="container mx-auto px-4 md:px-6">
+<div class="text-center mb-16">
+<p class="text-brand-yellow font-bold uppercase tracking-widest text-sm mb-3">Testimonials</p>
+<h2 class="text-4xl font-extrabold mb-4">What Our Clients Say</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+<!-- Testimonial 1 -->
+<div class="glass-card p-8 rounded-2xl flex flex-col">
+<div class="flex text-brand-yellow mb-6">
+<i class="w-4 h-4 fill-current" data-lucide="star"></i>
+<i class="w-4 h-4 fill-current ml-1" data-lucide="star"></i>
+<i class="w-4 h-4 fill-current ml-1" data-lucide="star"></i>
+<i class="w-4 h-4 fill-current ml-1" data-lucide="star"></i>
+<i class="w-4 h-4 fill-current ml-1" data-lucide="star"></i>
+</div>
+<p class="italic text-gray-300 mb-8 flex-grow leading-relaxed">
+            "Voltix Electrical did an amazing job upgrading our electrical panel. Professional, on time, and fairly priced. Highly recommend!"
+          </p>
+<div class="flex items-center space-x-4 border-t border-white/10 pt-6">
+<img alt="Sarah M." class="w-12 h-12 rounded-full object-cover grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFiAsaNC1k04zbmdJi8GURgPY9tNTuFIpVIkzrg3sEs04RxGr2MsKMEiJttKI2x-6Zw9CsdVqvPZKnaxs8zXRDAz-C8DwK__NI3xKfA-jjc_qXo38nZOgZFxEzT8b-OD_sMWqN-68jgiy5fVk2UEukFhBtj66p7lPbQEuu9VtU_qrgpUlCPO8uLG5uLUI068hh31YcqUPIeSeE5iLBTM9PZyWYkvnwZffsj5GLmGB2jdGg74JU3kMmqWgAxIiEJg_kmZS3FXxNdtw"/>
+<div>
+<p class="font-bold text-white">Sarah M.</p>
+<p class="text-xs text-gray-400">Homeowner</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="glass-card p-8 rounded-2xl flex flex-col">
+<div class="flex text-brand-yellow mb-6">
+<i class="w-4 h-4 fill-current" data-lucide="star"></i>
+<i class="w-4 h-4 fill-current ml-1" data-lucide="star"></i>
+<i class="w-4 h-4 fill-current ml-1" data-lucide="star"></i>
+<i class="w-4 h-4 fill-current ml-1" data-lucide="star"></i>
+<i class="w-4 h-4 fill-current ml-1" data-lucide="star"></i>
+</div>
+<p class="italic text-gray-300 mb-8 flex-grow leading-relaxed">
+            "We've used Voltix for our office multiple times. They're reliable, knowledgeable, and always get the job done right."
+          </p>
+<div class="flex items-center space-x-4 border-t border-white/10 pt-6">
+<img alt="David R." class="w-12 h-12 rounded-full object-cover grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-MZxtgnq9NAJP3q4dJxUbtgUMX3hZuRNilksIEqj97a3SJVL8CxSIEUDWJjpLTdghuus5wRbqq_iZs6BvfA33Pjwm6fEtHJuRoPKZSEZ8GNP9L1QWGRODWKIQwBypfnHsyG295tLGISLbr2mL8zjmNopTq9NMBJc2SS6-r-epLr7r6rtOoxjFaEEDkYiO20ifp8TzqR7FPNKKcR5-A-VROGWXpz3WkXq3ID_kJN1WoYodAc0cEPxFcktu7p2oRLqdE1FNdmEpGf4"/>
+<div>
+<p class="font-bold text-white">David R.</p>
+<p class="text-xs text-gray-400">Business Owner</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="glass-card p-8 rounded-2xl flex flex-col">
+<div class="flex text-brand-yellow mb-6">
+<i class="w-4 h-4 fill-current" data-lucide="star"></i>
+<i class="w-4 h-4 fill-current ml-1" data-lucide="star"></i>
+<i class="w-4 h-4 fill-current ml-1" data-lucide="star"></i>
+<i class="w-4 h-4 fill-current ml-1" data-lucide="star"></i>
+<i class="w-4 h-4 fill-current ml-1" data-lucide="star"></i>
+</div>
+<p class="italic text-gray-300 mb-8 flex-grow leading-relaxed">
+            "Called them for an emergency late at night and they showed up fast and fixed the issue. Lifesavers!"
+          </p>
+<div class="flex items-center space-x-4 border-t border-white/10 pt-6">
+<img alt="Jessica L." class="w-12 h-12 rounded-full object-cover grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOCC_PLpCrkyHoLdseD1pFiSrfF34B0Y-xPtThUo6rbuE1mPAFi5T37gDuUspsOLZrNHC4v8rbd8t3iTy-HpQptUYgPp7gkcvdRZD2a37GpZTjbodwQxIOYv7daOrvGMT3Sy3L7p_2AEON7RAbjm5nm3y5398Wb4DdU6n2ChzhYdcmccbgwUlvZgzUxl1GRNi3UKwd0I0bcEWbtFVwHsuYrrMdjYgy5_M0kCcaYm4vJRSSjRv-fSRFRY6Rg1UWb6FLm-JUp5NRr00"/>
+<div>
+<p class="font-bold text-white">Jessica L.</p>
+<p class="text-xs text-gray-400">Homeowner</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Pagination Indicators -->
+<div class="flex justify-center space-x-3">
+<span class="w-3 h-3 bg-brand-yellow rounded-full"></span>
+<span class="w-3 h-3 bg-gray-600 rounded-full"></span>
+<span class="w-3 h-3 bg-gray-600 rounded-full"></span>
+</div>
+</div>
+</section>
+<!-- END: Testimonials -->
+<!-- BEGIN: Call to Action Banner -->
+<section class="relative py-12 bg-brand-yellow" data-purpose="cta-banner">
+<div class="container mx-auto px-4 md:px-6">
+<div class="flex flex-col md:flex-row items-center justify-between gap-8">
+<div class="flex items-center">
+<div class="bg-brand-navy text-brand-yellow p-4 rounded-full mr-6 hidden sm:block">
+<i class="w-8 h-8 fill-current" data-lucide="phone-call"></i>
+</div>
+<div>
+<h2 class="text-3xl font-extrabold text-brand-navy mb-2">Need an Electrician? We're Here to Help!</h2>
+<p class="text-brand-navy/80 font-medium">Contact us today for a free quote or emergency service.</p>
+</div>
+</div>
+<a class="bg-brand-navy hover:bg-black text-white px-10 py-4 rounded-md font-bold text-lg flex items-center transition-all whitespace-nowrap shadow-xl" href="tel:5551234567">
+<i class="w-5 h-5 mr-3 fill-current" data-lucide="phone"></i>
+          Call Us Now
+        </a>
+</div>
+</div>
+<!-- Design accent -->
+<div class="absolute right-0 top-0 h-full opacity-10 pointer-events-none overflow-hidden">
+<i class="w-48 h-48 -mr-12 -mt-8" data-lucide="zap"></i>
+</div>
+</section>
+<!-- END: Call to Action Banner -->
+<!-- BEGIN: Footer -->
+<footer class="bg-brand-navy text-white pt-20 pb-10" data-purpose="footer" id="contact">
+<div class="container mx-auto px-4 md:px-6">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+<!-- Brand Info -->
+<div class="space-y-6">
+<div class="flex items-center space-x-2">
+<div class="text-brand-yellow font-black text-2xl flex items-center">
+<i class="fill-current mr-2" data-lucide="zap"></i>
+<span>Voltix</span>
+</div>
+</div>
+<p class="text-gray-400 text-sm leading-relaxed max-w-xs">
+            Powering homes and businesses with safe, reliable, and efficient electrical solutions.
+          </p>
+<div class="flex space-x-4">
+<a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-brand-yellow hover:text-brand-navy transition-all" href="#">
+<i class="w-5 h-5" data-lucide="facebook"></i>
+</a>
+<a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-brand-yellow hover:text-brand-navy transition-all" href="#">
+<i class="w-5 h-5" data-lucide="instagram"></i>
+</a>
+<a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-brand-yellow hover:text-brand-navy transition-all" href="#">
+<i class="w-5 h-5" data-lucide="twitter"></i>
+</a>
+<a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-brand-yellow hover:text-brand-navy transition-all" href="#">
+<i class="w-5 h-5" data-lucide="linkedin"></i>
+</a>
+</div>
+</div>
+<!-- Quick Links -->
+<div>
+<h4 class="text-lg font-bold mb-6 relative inline-block">
+            Quick Links
+            <span class="absolute -bottom-2 left-0 w-8 h-1 bg-brand-yellow"></span>
+</h4>
+<ul class="space-y-4 text-gray-400 text-sm">
+<li><a class="hover:text-brand-yellow transition-colors" href="#">Home</a></li>
+<li><a class="hover:text-brand-yellow transition-colors" href="#about">About</a></li>
+<li><a class="hover:text-brand-yellow transition-colors" href="#services">Services</a></li>
+<li><a class="hover:text-brand-yellow transition-colors" href="#why-choose-us">Why Choose Us</a></li>
+<li><a class="hover:text-brand-yellow transition-colors" href="#testimonials">Testimonials</a></li>
+<li><a class="hover:text-brand-yellow transition-colors" href="#contact">Contact</a></li>
+</ul>
+</div>
+<!-- Services -->
+<div>
+<h4 class="text-lg font-bold mb-6 relative inline-block">
+            Services
+            <span class="absolute -bottom-2 left-0 w-8 h-1 bg-brand-yellow"></span>
+</h4>
+<ul class="space-y-4 text-gray-400 text-sm">
+<li><a class="hover:text-brand-yellow transition-colors" href="#">Residential Electrical</a></li>
+<li><a class="hover:text-brand-yellow transition-colors" href="#">Commercial Electrical</a></li>
+<li><a class="hover:text-brand-yellow transition-colors" href="#">Electrical Installations</a></li>
+<li><a class="hover:text-brand-yellow transition-colors" href="#">Repairs &amp; Maintenance</a></li>
+<li><a class="hover:text-brand-yellow transition-colors" href="#">Safety Inspections</a></li>
+</ul>
+</div>
+<!-- Contact Us -->
+<div>
+<h4 class="text-lg font-bold mb-6 relative inline-block">
+            Contact Us
+            <span class="absolute -bottom-2 left-0 w-8 h-1 bg-brand-yellow"></span>
+</h4>
+<ul class="space-y-5 text-gray-400 text-sm">
+<li class="flex items-start">
+<i class="w-5 h-5 text-brand-yellow mr-3 shrink-0" data-lucide="phone"></i>
+<a class="hover:text-white transition-colors" href="tel:5551234567">(555) 123-4567</a>
+</li>
+<li class="flex items-start">
+<i class="w-5 h-5 text-brand-yellow mr-3 shrink-0" data-lucide="mail"></i>
+<a class="hover:text-white transition-colors" href="mailto:info@voltixelectrical.com">info@voltixelectrical.com</a>
+</li>
+<li class="flex items-start">
+<i class="w-5 h-5 text-brand-yellow mr-3 shrink-0" data-lucide="map-pin"></i>
+<span>123 Power Lane<br/>Austin, TX 78701</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Copyright -->
+<div class="pt-8 border-t border-white/10 text-center text-gray-500 text-sm">
+<p>© 2024 Voltix Electrical Services. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<!-- END: Footer -->
+<!-- Initialize Lucide Icons -->
+<script data-purpose="icon-initialization">
+    lucide.createIcons();
+  </script>
+</body></html>

@@ -1,0 +1,228 @@
+/* Voltix Electrical Services — site styles */
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+  color: #1a1a1a;
+}
+
+/* Glass card used across testimonials / dark sections */
+.glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Service card hover lift */
+.service-card { transition: all 0.3s ease; }
+.service-card:hover { transform: translateY(-5px); }
+
+/* Sticky mobile bottom bar */
+.mobile-cta-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 60;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  background: #0F172A;
+  border-top: 2px solid #FFC82C;
+  padding: 8px;
+  box-shadow: 0 -4px 12px rgba(0,0,0,0.18);
+}
+.mobile-cta-bar a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 8px;
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 6px;
+}
+.mobile-cta-bar .call-btn { background: #FFC82C; color: #0F172A; }
+.mobile-cta-bar .call-btn:active { background: #FACC15; }
+.mobile-cta-bar .estimate-btn {
+  background: transparent;
+  color: #FFFFFF;
+  border: 1px solid rgba(255,255,255,0.2);
+  margin-left: 6px;
+}
+@media (min-width: 768px) {
+  .mobile-cta-bar { display: none; }
+}
+@media (max-width: 767px) {
+  body { padding-bottom: 76px; }
+}
+
+/* FAQ accordion */
+.faq-item summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  color: #0F172A;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: "+";
+  font-size: 24px;
+  font-weight: 300;
+  color: #FFC82C;
+  transition: transform 0.2s ease;
+}
+.faq-item[open] summary::after {
+  content: "−";
+}
+.faq-item .faq-answer {
+  padding-bottom: 20px;
+  color: #475569;
+  line-height: 1.7;
+}
+.faq-item + .faq-item { border-top: 1px solid #e5e7eb; }
+
+/* Process step connector line */
+.process-step { position: relative; }
+.process-step::after {
+  content: "";
+  position: absolute;
+  top: 32px;
+  left: calc(50% + 32px);
+  right: calc(-50% + 32px);
+  height: 2px;
+  background: rgba(255, 200, 44, 0.25);
+  z-index: 0;
+}
+.process-step:last-child::after { display: none; }
+@media (max-width: 767px) {
+  .process-step::after { display: none; }
+}
+
+/* Before/after slider (CSS-only) */
+.ba-slider {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  aspect-ratio: 16 / 10;
+  background: #0F172A;
+}
+.ba-slider img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ba-slider .ba-after {
+  clip-path: inset(0 0 0 50%);
+}
+.ba-slider .ba-handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 3px;
+  background: #FFC82C;
+  pointer-events: none;
+}
+.ba-slider .ba-handle::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #FFC82C;
+  border: 3px solid #0F172A;
+}
+.ba-slider .ba-label {
+  position: absolute;
+  bottom: 12px;
+  padding: 4px 10px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+.ba-slider .ba-label.before { left: 12px; background: rgba(15, 23, 42, 0.85); color: #fff; }
+.ba-slider .ba-label.after  { right: 12px; background: #FFC82C; color: #0F172A; }
+
+/* Mobile nav sheet */
+.nav-sheet {
+  display: none;
+  position: fixed;
+  inset: 64px 0 0 0;
+  background: #0F172A;
+  z-index: 40;
+  padding: 24px;
+  overflow-y: auto;
+}
+.nav-sheet.open { display: block; }
+.nav-sheet a {
+  display: block;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  color: #E2E8F0;
+  font-weight: 500;
+}
+.nav-sheet a:hover { color: #FFC82C; }
+
+/* Lead form */
+.lead-form input,
+.lead-form select,
+.lead-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 15px;
+  font-family: inherit;
+  background: #fff;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.lead-form input:focus,
+.lead-form select:focus,
+.lead-form textarea:focus {
+  outline: none;
+  border-color: #FFC82C;
+  box-shadow: 0 0 0 3px rgba(255, 200, 44, 0.18);
+}
+.lead-form label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #0F172A;
+  margin-bottom: 6px;
+}
+
+/* Gallery grid hover */
+.gallery-tile {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+.gallery-tile img {
+  transition: transform 0.4s ease;
+}
+.gallery-tile:hover img { transform: scale(1.05); }
+.gallery-tile .tile-caption {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 16px;
+  background: linear-gradient(to top, rgba(15,23,42,0.95), rgba(15,23,42,0));
+  color: #fff;
+}
+
+/* Subtle dot pattern bg */
+.bg-dots {
+  background-image: radial-gradient(rgba(255, 200, 44, 0.15) 1px, transparent 1px);
+  background-size: 20px 20px;
+}

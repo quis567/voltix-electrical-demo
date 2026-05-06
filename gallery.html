@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Project Gallery — Voltix Electrical Services Austin | Panel Upgrades, EV, Generators</title>
+<meta name="description" content="Browse Voltix Electrical Services' project gallery: panel upgrades, EV charger installations, whole-home generators, smart home, lighting, and rewiring across Austin." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  tailwind.config = { theme: { extend: { colors: { brand: { yellow:'#FFC82C', navy:'#0F172A', navyLight:'#1E293B' } }, fontFamily: { sans: ['Inter','sans-serif'] } } } };
+</script>
+<link rel="stylesheet" href="assets/css/site.css" />
+</head>
+<body class="antialiased">
+
+<header class="sticky top-0 z-50 bg-brand-navy/95 backdrop-blur-md border-b border-white/10">
+  <div class="container mx-auto px-4 md:px-6 h-16 flex items-center justify-between">
+    <a href="index.html" class="flex items-center space-x-2 text-brand-yellow"><img src="assets/img/logo.webp" alt="Voltix Electrical Services" class="h-14 w-auto" /></a>
+    <nav class="hidden md:flex items-center space-x-7 text-sm font-medium text-gray-300">
+      <a href="index.html" class="hover:text-white">Home</a>
+      <a href="services.html" class="hover:text-white">Services</a>
+      <a href="service-areas.html" class="hover:text-white">Service Areas</a>
+      <a href="gallery.html" class="text-brand-yellow">Gallery</a>
+      <a href="reviews.html" class="hover:text-white">Reviews</a>
+      <a href="about.html" class="hover:text-white">About</a>
+      <a href="contact.html" class="hover:text-white">Contact</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <a href="tel:5551234567" class="bg-brand-yellow hover:bg-yellow-400 text-brand-navy px-4 md:px-6 py-2.5 rounded-md font-bold text-sm flex items-center"><i class="w-4 h-4 mr-2 fill-current" data-lucide="phone"></i><span class="hidden sm:inline">Call Us Now</span><span class="sm:hidden">Call</span></a>
+      <button data-nav-toggle class="md:hidden text-white p-2"><i data-lucide="menu" class="w-6 h-6"></i></button>
+    </div>
+  </div>
+</header>
+<div data-nav-sheet class="nav-sheet">
+  <a href="index.html">Home</a><a href="services.html">Services</a><a href="service-areas.html">Service Areas</a><a href="gallery.html">Gallery</a><a href="reviews.html">Reviews</a><a href="about.html">About</a><a href="financing.html">Financing</a><a href="emergency.html">24/7 Emergency</a><a href="contact.html">Contact</a>
+</div>
+
+<!-- Hero -->
+<section class="bg-brand-navy py-16">
+  <div class="container mx-auto px-4 md:px-6 text-center">
+    <p class="text-brand-yellow font-bold uppercase tracking-widest text-sm mb-3">Project Gallery</p>
+    <h1 class="text-5xl md:text-6xl font-extrabold text-white mb-5">Our Work Speaks for Itself</h1>
+    <p class="text-xl text-gray-300 max-w-2xl mx-auto">Browse 30+ residential and commercial electrical projects from across Greater Austin — panel upgrades, EV chargers, generators, smart home installations, and more.</p>
+  </div>
+</section>
+
+<!-- Filter -->
+<section class="py-10 bg-gray-50 border-b border-gray-200 sticky top-16 z-30">
+  <div class="container mx-auto px-4 md:px-6">
+    <div class="flex flex-wrap items-center justify-center gap-2">
+      <button data-gallery-filter="all" class="bg-brand-yellow text-brand-navy px-5 py-2 rounded-full text-sm font-bold transition-all">All Projects</button>
+      <button data-gallery-filter="panel" class="bg-white text-gray-700 px-5 py-2 rounded-full text-sm font-bold border border-gray-200 transition-all">Panel Upgrades</button>
+      <button data-gallery-filter="ev" class="bg-white text-gray-700 px-5 py-2 rounded-full text-sm font-bold border border-gray-200 transition-all">EV Chargers</button>
+      <button data-gallery-filter="generator" class="bg-white text-gray-700 px-5 py-2 rounded-full text-sm font-bold border border-gray-200 transition-all">Generators</button>
+      <button data-gallery-filter="lighting" class="bg-white text-gray-700 px-5 py-2 rounded-full text-sm font-bold border border-gray-200 transition-all">Lighting</button>
+      <button data-gallery-filter="smart" class="bg-white text-gray-700 px-5 py-2 rounded-full text-sm font-bold border border-gray-200 transition-all">Smart Home</button>
+      <button data-gallery-filter="rewire" class="bg-white text-gray-700 px-5 py-2 rounded-full text-sm font-bold border border-gray-200 transition-all">Rewiring</button>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery -->
+<section class="py-16 bg-white">
+  <div class="container mx-auto px-4 md:px-6">
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+
+      <div data-gallery-item="panel" class="gallery-tile"><img class="w-full h-64 object-cover" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=70" alt="200A panel upgrade Tarrytown" /><div class="tile-caption"><span class="text-xs uppercase tracking-wide text-brand-yellow font-bold">Panel · Tarrytown</span><h4 class="font-bold mt-1 text-sm">100A → 200A Service Upgrade</h4></div></div>
+      <div data-gallery-item="ev" class="gallery-tile"><img class="w-full h-64 object-cover" src="https://images.unsplash.com/photo-1633113088332-a52e7d09a905?auto=format&fit=crop&w=600&q=70" alt="Tesla Wall Connector Mueller" /><div class="tile-caption"><span class="text-xs uppercase tracking-wide text-brand-yellow font-bold">EV · Mueller</span><h4 class="font-bold mt-1 text-sm">Tesla Wall Connector Install</h4></div></div>
+      <div data-gallery-item="generator" class="gallery-tile"><img class="w-full h-64 object-cover" src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=600&q=70" alt="Generac 24kW Westlake" /><div class="tile-caption"><span class="text-xs uppercase tracking-wide text-brand-yellow font-bold">Generator · Westlake</span><h4 class="font-bold mt-1 text-sm">Generac 24kW Standby</h4></div></div>
+      <div data-gallery-item="lighting" class="gallery-tile"><img class="w-full h-64 object-cover" src="https://images.unsplash.com/photo-1565608438257-fac3c27beb36?auto=format&fit=crop&w=600&q=70" alt="Recessed LED Hyde Park" /><div class="tile-caption"><span class="text-xs uppercase tracking-wide text-brand-yellow font-bold">Lighting · Hyde Park</span><h4 class="font-bold mt-1 text-sm">Recessed LED Retrofit</h4></div></div>
+
+      <div data-gallery-item="smart" class="gallery-tile"><img class="w-full h-64 object-cover" src="https://images.unsplash.com/photo-1607400201515-c2c41c07d307?auto=format&fit=crop&w=600&q=70" alt="Lutron Caseta Round Rock" /><div class="tile-caption"><span class="text-xs uppercase tracking-wide text-brand-yellow font-bold">Smart · Round Rock</span><h4 class="font-bold mt-1 text-sm">Lutron Caseta Whole-Home</h4></div></div>
+      <div data-gallery-item="rewire" class="gallery-tile"><img class="w-full h-64 object-cover" src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=600&q=70" alt="Knob and tube replacement Clarksville" /><div class="tile-caption"><span class="text-xs uppercase tracking-wide text-brand-yellow font-bold">Rewire · Clarksville</span><h4 class="font-bold mt-1 text-sm">Knob-and-Tube Replacement</h4></div></div>
+      <div data-gallery-item="panel" class="gallery-tile"><img class="w-full h-64 object-cover" src="https://images.unsplash.com/photo-1581094271901-8022df4466f9?auto=format&fit=crop&w=600&q=70" alt="400A service upgrade Westlake" /><div class="tile-caption"><span class="text-xs uppercase tracking-wide text-brand-yellow font-bold">Panel · Westlake</span><h4 class="font-bold mt-1 text-sm">400A Service Upgrade</h4></div></div>
+      <div data-gallery-item="ev" class="gallery-tile"><img class="w-full h-64 object-cover" src="https://images.unsplash.com/photo-1593941707874-ef25b8b4a92b?auto=format&fit=crop&w=600&q=70" alt="ChargePoint home install" /><div class="tile-caption"><span class="text-xs uppercase tracking-wide text-brand-yellow font-bold">EV · Cedar Park</span><h4 class="font-bold mt-1 text-sm">ChargePoint Home Flex</h4></div></div>
+
+      <div data-gallery-item="generator" class="gallery-tile"><img class="w-full h-64 object-cover" src="https://images.unsplash.com/photo-1611817547984-d8a1cf75ed5d?auto=format&fit=crop&w=600&q=70" alt="Kohler standby generator" /><div class="tile-caption"><span class="text-xs uppercase tracking-wide text-brand-yellow font-bold">Generator · Lakeway</span><h4 class="font-bold mt-1 text-sm">Kohler 26kW Premium</h4></div></div>
+      <div data-gallery-item="lighting" class="gallery-tile"><img class="w-full h-64 object-cover" src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=600&q=70" alt="Outdoor landscape lighting" /><div class="tile-caption"><span class="text-xs uppercase tracking-wide text-brand-yellow font-bold">Lighting · Lakeway</span><h4 class="font-bold mt-1 text-sm">Landscape Lighting Design</h4></div></div>
+      <div data-gallery-item="smart" class="gallery-tile"><img class="w-full h-64 object-cover" src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=600&q=70" alt="Smart panel install" /><div class="tile-caption"><span class="text-xs uppercase tracking-wide text-brand-yellow font-bold">Smart · Mueller</span><h4 class="font-bold mt-1 text-sm">Span Smart Panel</h4></div></div>
+      <div data-gallery-item="panel" class="gallery-tile"><img class="w-full h-64 object-cover" src="https://images.unsplash.com/photo-1631557776726-f4f47cefb1f0?auto=format&fit=crop&w=600&q=70" alt="Sub panel addition" /><div class="tile-caption"><span class="text-xs uppercase tracking-wide text-brand-yellow font-bold">Panel · Pflugerville</span><h4 class="font-bold mt-1 text-sm">Sub-Panel for ADU</h4></div></div>
+
+      <div data-gallery-item="rewire" class="gallery-tile"><img class="w-full h-64 object-cover" src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=600&q=70" alt="Aluminum wire replacement" /><div class="tile-caption"><span class="text-xs uppercase tracking-wide text-brand-yellow font-bold">Rewire · Allandale</span><h4 class="font-bold mt-1 text-sm">Aluminum-to-Copper Conversion</h4></div></div>
+      <div data-gallery-item="ev" class="gallery-tile"><img class="w-full h-64 object-cover" src="https://images.unsplash.com/photo-1647500666543-1c8a13a3a35b?auto=format&fit=crop&w=600&q=70" alt="Tesla Wall Connector exterior" /><div class="tile-caption"><span class="text-xs uppercase tracking-wide text-brand-yellow font-bold">EV · Lakeway</span><h4 class="font-bold mt-1 text-sm">Outdoor Tesla Wall Connector</h4></div></div>
+      <div data-gallery-item="lighting" class="gallery-tile"><img class="w-full h-64 object-cover" src="https://images.unsplash.com/photo-1604147495798-57beb5d6af73?auto=format&fit=crop&w=600&q=70" alt="Pendant lighting kitchen" /><div class="tile-caption"><span class="text-xs uppercase tracking-wide text-brand-yellow font-bold">Lighting · Hyde Park</span><h4 class="font-bold mt-1 text-sm">Kitchen Pendant Install</h4></div></div>
+      <div data-gallery-item="generator" class="gallery-tile"><img class="w-full h-64 object-cover" src="https://images.unsplash.com/photo-1591488333041-f8af71b15fcc?auto=format&fit=crop&w=600&q=70" alt="Cummins generator install" /><div class="tile-caption"><span class="text-xs uppercase tracking-wide text-brand-yellow font-bold">Generator · Bee Cave</span><h4 class="font-bold mt-1 text-sm">Cummins 36kW Estate</h4></div></div>
+
+      <div data-gallery-item="smart" class="gallery-tile"><img class="w-full h-64 object-cover" src="https://images.unsplash.com/photo-1558002038-bb4237b50bea?auto=format&fit=crop&w=600&q=70" alt="Ecobee thermostat install" /><div class="tile-caption"><span class="text-xs uppercase tracking-wide text-brand-yellow font-bold">Smart · Cedar Park</span><h4 class="font-bold mt-1 text-sm">Ecobee + C-Wire Install</h4></div></div>
+      <div data-gallery-item="panel" class="gallery-tile"><img class="w-full h-64 object-cover" src="https://images.unsplash.com/photo-1623298317883-6b70254edf31?auto=format&fit=crop&w=600&q=70" alt="Federal Pacific replacement" /><div class="tile-caption"><span class="text-xs uppercase tracking-wide text-brand-yellow font-bold">Panel · Brentwood</span><h4 class="font-bold mt-1 text-sm">Federal Pacific Replacement</h4></div></div>
+      <div data-gallery-item="rewire" class="gallery-tile"><img class="w-full h-64 object-cover" src="https://images.unsplash.com/photo-1607400201889-565b1ee75f8e?auto=format&fit=crop&w=600&q=70" alt="Whole home rewire" /><div class="tile-caption"><span class="text-xs uppercase tracking-wide text-brand-yellow font-bold">Rewire · Travis Heights</span><h4 class="font-bold mt-1 text-sm">Phased Whole-Home Rewire</h4></div></div>
+      <div data-gallery-item="lighting" class="gallery-tile"><img class="w-full h-64 object-cover" src="https://images.unsplash.com/photo-1614505063753-c6c95a9d4cc1?auto=format&fit=crop&w=600&q=70" alt="Ceiling fan install" /><div class="tile-caption"><span class="text-xs uppercase tracking-wide text-brand-yellow font-bold">Lighting · Round Rock</span><h4 class="font-bold mt-1 text-sm">Big Ass Fans Haiku</h4></div></div>
+
+      <div data-gallery-item="ev" class="gallery-tile"><img class="w-full h-64 object-cover" src="https://images.unsplash.com/photo-1620914898095-de5b8aff5ec1?auto=format&fit=crop&w=600&q=70" alt="Wallbox EV charger" /><div class="tile-caption"><span class="text-xs uppercase tracking-wide text-brand-yellow font-bold">EV · Westlake</span><h4 class="font-bold mt-1 text-sm">Dual Wallbox Pulsar Plus</h4></div></div>
+      <div data-gallery-item="smart" class="gallery-tile"><img class="w-full h-64 object-cover" src="https://images.unsplash.com/photo-1610850779928-4cefa6ff4c0a?auto=format&fit=crop&w=600&q=70" alt="Smart switch install" /><div class="tile-caption"><span class="text-xs uppercase tracking-wide text-brand-yellow font-bold">Smart · Hyde Park</span><h4 class="font-bold mt-1 text-sm">Lutron RA3 Whole-Home</h4></div></div>
+      <div data-gallery-item="generator" class="gallery-tile"><img class="w-full h-64 object-cover" src="https://images.unsplash.com/photo-1581094288332-58e4f9d11d10?auto=format&fit=crop&w=600&q=70" alt="Transfer switch install" /><div class="tile-caption"><span class="text-xs uppercase tracking-wide text-brand-yellow font-bold">Generator · Round Rock</span><h4 class="font-bold mt-1 text-sm">Whole-Home Transfer Switch</h4></div></div>
+      <div data-gallery-item="panel" class="gallery-tile"><img class="w-full h-64 object-cover" src="https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?auto=format&fit=crop&w=600&q=70" alt="Square D panel" /><div class="tile-caption"><span class="text-xs uppercase tracking-wide text-brand-yellow font-bold">Panel · Mueller</span><h4 class="font-bold mt-1 text-sm">Square D QO 200A</h4></div></div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-12 bg-brand-yellow">
+  <div class="container mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center justify-between gap-8">
+    <div>
+      <h2 class="text-3xl font-extrabold text-brand-navy mb-2">See something you like?</h2>
+      <p class="text-brand-navy/80 font-medium">We do this every day. Get a free quote for your project.</p>
+    </div>
+    <div class="flex flex-col sm:flex-row gap-3">
+      <a href="tel:5551234567" class="bg-brand-navy hover:bg-black text-white px-8 py-4 rounded-md font-bold text-lg flex items-center justify-center"><i class="w-5 h-5 mr-3 fill-current" data-lucide="phone"></i> Call Us Now</a>
+      <a href="contact.html" class="bg-white hover:bg-gray-50 text-brand-navy px-8 py-4 rounded-md font-bold text-lg flex items-center justify-center">Free Estimate</a>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-brand-navy text-white pt-20 pb-10">
+  <div class="container mx-auto px-4 md:px-6">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-10 mb-12">
+      <div class="col-span-2 md:col-span-1 space-y-5">
+        <a href="index.html" class="flex items-center space-x-2 text-brand-yellow"><img src="assets/img/logo.webp" alt="Voltix Electrical Services" class="h-14 w-auto" /></a>
+        <p class="text-gray-400 text-sm leading-relaxed max-w-xs">Licensed Master Electricians serving Austin since 2008.</p>
+      </div>
+      <div><h4 class="text-base font-bold mb-5 relative inline-block">Services<span class="absolute -bottom-2 left-0 w-8 h-1 bg-brand-yellow"></span></h4>
+        <ul class="space-y-3 text-gray-400 text-sm">
+          <li><a class="hover:text-brand-yellow" href="services/panel-upgrade.html">Panel Upgrades</a></li>
+          <li><a class="hover:text-brand-yellow" href="services/ev-charger-installation.html">EV Charger Install</a></li>
+          <li><a class="hover:text-brand-yellow" href="services/generator-installation.html">Generators</a></li>
+          <li><a class="hover:text-brand-yellow" href="services/electrical-troubleshooting.html">Troubleshooting</a></li>
+          <li><a class="hover:text-brand-yellow" href="services/smart-home-installation.html">Smart Home</a></li>
+          <li><a class="hover:text-brand-yellow" href="services/lighting-installation.html">Lighting & Fans</a></li>
+          <li><a class="hover:text-brand-yellow" href="services/rewiring.html">Whole-Home Rewiring</a></li>
+        </ul>
+      </div>
+      <div><h4 class="text-base font-bold mb-5 relative inline-block">Company<span class="absolute -bottom-2 left-0 w-8 h-1 bg-brand-yellow"></span></h4>
+        <ul class="space-y-3 text-gray-400 text-sm">
+          <li><a class="hover:text-brand-yellow" href="about.html">About Voltix</a></li>
+          <li><a class="hover:text-brand-yellow" href="service-areas.html">Service Areas</a></li>
+          <li><a class="hover:text-brand-yellow" href="gallery.html">Project Gallery</a></li>
+          <li><a class="hover:text-brand-yellow" href="reviews.html">Reviews</a></li>
+          <li><a class="hover:text-brand-yellow" href="financing.html">Financing</a></li>
+          <li><a class="hover:text-brand-yellow" href="emergency.html">24/7 Emergency</a></li>
+          <li><a class="hover:text-brand-yellow" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div><h4 class="text-base font-bold mb-5 relative inline-block">Contact<span class="absolute -bottom-2 left-0 w-8 h-1 bg-brand-yellow"></span></h4>
+        <ul class="space-y-4 text-gray-400 text-sm">
+          <li class="flex items-start gap-3"><i class="w-5 h-5 text-brand-yellow mt-0.5 shrink-0" data-lucide="phone"></i><a class="hover:text-white" href="tel:5551234567">(555) 123-4567</a></li>
+          <li class="flex items-start gap-3"><i class="w-5 h-5 text-brand-yellow mt-0.5 shrink-0" data-lucide="mail"></i><a class="hover:text-white" href="mailto:info@voltixelectrical.com">info@voltixelectrical.com</a></li>
+          <li class="flex items-start gap-3"><i class="w-5 h-5 text-brand-yellow mt-0.5 shrink-0" data-lucide="map-pin"></i><span>123 Power Lane<br/>Austin, TX 78701</span></li>
+          <li class="flex items-start gap-3"><i class="w-5 h-5 text-brand-yellow mt-0.5 shrink-0" data-lucide="badge-check"></i><span>TECL #29874</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-gray-500">
+      <p>© 2026 Voltix Electrical Services. All rights reserved.</p>
+      <p>Licensed, insured & bonded · Austin, TX</p>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-cta-bar">
+  <a href="tel:5551234567" class="call-btn"><i class="w-4 h-4 fill-current" data-lucide="phone"></i> Call 24/7</a>
+  <a href="contact.html" class="estimate-btn"><i class="w-4 h-4" data-lucide="calendar"></i> Free Estimate</a>
+</div>
+
+<script src="assets/js/site.js"></script>
+</body>
+</html>
